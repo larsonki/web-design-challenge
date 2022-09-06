@@ -1,0 +1,22 @@
+.page-background {background-color: #dfe8e5;}
+
+#nav-bar {background-color: white;}
+
+#latitude {color;
+        background-color: #3a5c51;}
+
+h2 {color: #3a5c51;}
+
+h3{color: #3a5c51;}
+
+#summary {background-color: white;
+    padding: 20px;}
+
+#visualizations {background-color: white;
+    padding: 20px;}
+
+#content-block {display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;}
