@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Max Temperature Visualization</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body class="page-background">
     <div id="page-container" class="container-fluid">
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <a id="latitude" href="index.html" class="navbar-brand">Latitude</a>
+                <a id="latitude" href="../index.html" class="navbar-brand">Latitude</a>
                 <!-- Code adapted from Traversy Media @ https://www.youtube.com/watch?v=4sosXZsdy-s  -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
@@ -24,17 +24,17 @@
                         <li class="nav-item dropdown ml-md-auto">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="visualizations/max_temp.html">Max Temperature</a></li>
-                                <li><a class="dropdown-item" href="visualizations/humidity.html">Humidity</a></li>
-                                <li><a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a></li>
-                                <li><a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a></li>
+                                <li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
+                                <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                                <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="comparison.html">Comparison</a>
+                            <a class="nav-link" href="../comparison.html">Comparison</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="data.html">Data</a>
+                            <a class="nav-link" href="../data.html">Data</a>
                         </li>
                     </ul>
                 </div>
@@ -45,18 +45,12 @@
                 <div class="row justify-content-around gx-5">
                     <div id="summary" class="col-md-7">
                         <h2>
-                            Summary: Latitude vs. X
+                            Max Temperature
                         </h2>
                         <hr>
-                        <img alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="assets/images/max_temp.png" style="float:left;width:360px;height:240px;"/>
-                        <p class="fw-bold">
-                            "What's the weather like as we approach the equator?"
-                        </p>
+                        <img alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="../assets/images/max_temp.png" class="img-fluid"/>
                         <p>
-                            Using a Python script, over 500 cities were randomly selected by latitude and longitude. After each city was selected, a weather check was completed using a series of successive API calls to the OpenWeatherMap API. The results were collected and stored in a data frame for further analysis.
-                        </p>
-                        <p>
-                            After that, visual representations of the relationships between latitude and temperature, humidity, cloudiness and wind speed were created in the form of scatter plots using Matplotlib. This website includes the source data as well as analysis of the data documented by visualizations.
+                            The above scatter plot displays the maximum temperature reached on the date of the API query and the corresponding latitude of the city. As the latitude approaches 0 (or the equator), the temperatures increase. The shape of the scatter plot appears to create a normal curve.
                         </p>
                     </div>
                     <div id="visualizations" class="col-md-4">
@@ -70,25 +64,25 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="visualizations/max_temp.html">
-                                    <img alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="assets/images/max_temp.png" class="img-fluid" />
+                                <a href="max_temp.html">
+                                    <img id="visual_selection" alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="../assets/images/max_temp.png" class="img-fluid border border-3" />
                                 </a>
                             </div>
                             <div class="col-md-6">
-                                <a href="visualizations/humidity.html">
-                                    <img alt="Scatter plot of latitude vs. humidity" src="assets/images/humidity.png" class="img-fluid" />
+                                <a href="humidity.html">
+                                    <img alt="Scatter plot of latitude vs. humidity" src="../assets/images/humidity.png" class="img-fluid" />
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="visualizations/cloudiness.html">
-                                    <img alt="Bootstrap Image Preview" src="assets/images/cloudiness.png" class="img-fluid" />
+                                <a href="cloudiness.html">
+                                    <img alt="Bootstrap Image Preview" src="../assets/images/cloudiness.png" class="img-fluid" />
                                 </a>
                             </div>
                             <div class="col-md-6">
-                                <a href="visualizations/wind_speed.html">
-                                    <img alt="Bootstrap Image Preview" src="assets/images/wind.png" class="img-fluid" />
+                                <a href="wind_speed.html">
+                                    <img alt="Bootstrap Image Preview" src="../assets/images/wind.png" class="img-fluid" />
                                 </a>
 
                             </div>

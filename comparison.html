@@ -40,53 +40,40 @@
                 </div>
             </div>
         </nav>
-        <div id="content-block" class="row">
+        <div id="content-block" class="row d-flex justify-content-center">
             <div class="col-md-12">
-                <div class="row justify-content-around gx-5">
-                    <div id="summary" class="col-md-7">
+                <div class="row">
+                    <div id="summary" class="col-md-12">
                         <h2>
-                            Summary: Latitude vs. X
+                            Comparison: Latitude vs. X
                         </h2>
                         <hr>
-                        <img alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="assets/images/max_temp.png" style="float:left;width:360px;height:240px;"/>
-                        <p class="fw-bold">
-                            "What's the weather like as we approach the equator?"
-                        </p>
                         <p>
-                            Using a Python script, over 500 cities were randomly selected by latitude and longitude. After each city was selected, a weather check was completed using a series of successive API calls to the OpenWeatherMap API. The results were collected and stored in a data frame for further analysis.
+                            Click any plot to get an in-depth analysis.
                         </p>
-                        <p>
-                            After that, visual representations of the relationships between latitude and temperature, humidity, cloudiness and wind speed were created in the form of scatter plots using Matplotlib. This website includes the source data as well as analysis of the data documented by visualizations.
-                        </p>
-                    </div>
-                    <div id="visualizations" class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>
-                                    Visualizations
-                                </h3>
-                                <hr>
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="col-md-6">
+                                <h5>vs. Max Temperature</h5>
                                 <a href="visualizations/max_temp.html">
                                     <img alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="assets/images/max_temp.png" class="img-fluid" />
                                 </a>
                             </div>
                             <div class="col-md-6">
+                                <h5>vs. Humidity</h5>
                                 <a href="visualizations/humidity.html">
                                     <img alt="Scatter plot of latitude vs. humidity" src="assets/images/humidity.png" class="img-fluid" />
                                 </a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row pt-3">
                             <div class="col-md-6">
+                                <h5>vs. Cloudiness</h5>
                                 <a href="visualizations/cloudiness.html">
                                     <img alt="Bootstrap Image Preview" src="assets/images/cloudiness.png" class="img-fluid" />
                                 </a>
                             </div>
                             <div class="col-md-6">
+                                <h5>vs. Wind Speed</h5>
                                 <a href="visualizations/wind_speed.html">
                                     <img alt="Bootstrap Image Preview" src="assets/images/wind.png" class="img-fluid" />
                                 </a>
