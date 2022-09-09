@@ -34,3 +34,19 @@ h5 {color: #2c665d;
     margin-right: 5%;}
 
 #visual_selection {border-color: #2c665d;}
+
+@media (max-width: 967px) {
+    #content-block {display: inline-block;
+    margin: auto;}
+    
+    .page-background {background-color: white;}
+
+@media  (max-width: 577px) {
+    .navbar {background-color: #2c665d;}
+
+    .nav-item a {color: white;}
+
+    .dropdown-menu a {color: #2c665d;}
+
+    #xyz {overflow-x: scroll;}
+}

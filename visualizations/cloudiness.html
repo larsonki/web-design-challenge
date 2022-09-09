@@ -49,14 +49,8 @@
                         </h2>
                         <hr>
                         <img alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="../assets/images/cloudiness.png" class="img-fluid"/>
-                        <p class="fw-bold">
-                            "What's the weather like as we approach the equator?"
-                        </p>
                         <p>
-                            Using a Python script, over 500 cities were randomly selected by latitude and longitude. After each city was selected, a weather check was completed using a series of successive API calls to the OpenWeatherMap API. The results were collected and stored in a data frame for further analysis.
-                        </p>
-                        <p>
-                            After that, visual representations of the relationships between latitude and temperature, humidity, cloudiness and wind speed were created in the form of scatter plots using Matplotlib. This website includes the source data as well as analysis of the data documented by visualizations.
+                            The above scatter plot displays the cloudiness percentage recorded on the date of the API query and the corresponding latitude of the city. There is no correlation between the recorded cloudiness and the city's latitude.
                         </p>
                     </div>
                     <div id="visualizations" class="col-md-4">
@@ -69,24 +63,22 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-3 col-sm-6">
                                 <a href="max_temp.html">
                                     <img alt="Scatter plot of latitude vs. max temperature (Fahrenheit)" src="../assets/images/max_temp.png" class="img-fluid" />
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-3 col-sm-6">
                                 <a href="humidity.html">
                                     <img alt="Scatter plot of latitude vs. humidity" src="../assets/images/humidity.png" class="img-fluid" />
                                 </a>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-3 col-sm-6">
                                 <a href="cloudiness.html">
                                     <img alt="Bootstrap Image Preview" src="../assets/images/cloudiness.png" class="img-fluid border border-3" />
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-3 col-sm-6">
                                 <a href="wind_speed.html">
                                     <img alt="Bootstrap Image Preview" src="../assets/images/wind.png" class="img-fluid" />
                                 </a>
